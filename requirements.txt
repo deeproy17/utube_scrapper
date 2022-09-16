@@ -1,0 +1,17 @@
+beautifulsoup4==4.9.1
+bs4==0.0.1
+dnspython==1.16.0
+Flask==2.1.0
+Flask-Cors==3.0.9
+requests==2.24.0
+selenium
+six
+urllib3==1.25.11
+webdriver-manager==3.3.0
+snowflake-connector-python
+snowflake-ingest
+Werkzeug
+certifi==2020.6.20
+chardet==3.0.4
+gunicorn==20.0.4
+
