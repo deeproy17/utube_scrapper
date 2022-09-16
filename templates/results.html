@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+     
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Youtube Scrapper</div>
+
+   <table cellspacing="0">
+      <tr>
+         <th>S:No</th>
+         <th>Title</th>
+         <th>Link</th>
+         <th>Likes </th>
+         <th>Comments</th>
+      </tr>
+         {% for review in query_results %}
+      <tr>
+          <td>{{review[0]}}</td>
+         <td>{{review[1]}}</td>
+         <td>{{review[2]}}</td>
+         <td>{{review[3]}}</td>
+         <td>{{review[4]}} </td>
+       {% endfor %}
+   </table>
+</div>
+
+
+
+</body>
+
+</html>
